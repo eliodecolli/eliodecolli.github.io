@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Elio DecolliDApiAuth</title><!-- Begin Jekyll SEO tag v2.6.1 -->
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="DApiAuth" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Hey There" />
+<meta property="og:description" content="Hey There" />
+<meta property="og:site_name" content="Elio Decolli" />
+<script type="application/ld+json">
+{"headline":"DApiAuth","url":"/dapiauth/","description":"Hey There","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" type="text/css" href="/assets/main-dark.css"></head>
+<body>
+    <div class="container"><header>
+  <div class="menu">
+    <ul><li><a href="/about/">About Me</a></li><li><a href="/dapiauth/">DApiAuth</a></li></ul>
+  </div>
+</header>
+<main>
+      <h1 id="dapiauth">DApiAuth</h1>
+
+<p>DApiAuth is a library used to implement blockchain-based authorization within Go APIs.</p>
+
+<p>Each caller is registered on the chain and every token is stored in the respective smart contracts of the endpoint. The process goes as following:</p>
+
+<ol>
+  <li>The caller authenticates in the server.</li>
+  <li>After authenticating the server registers the caller’s public address as an available token.</li>
+  <li>The server sends the token to the caller.</li>
+  <li>In order to access the remote endpoint the caller must go through the smart contract of the specified application with the specified token.</li>
+  <li>The smart contract decides whether the token is valid and also if it has access to the specified route.</li>
+  <li>The call is passed on to the endpoint by the smart contract and the result is sent back to the client’s public Ethereum address.</li>
+</ol>
+
+<p><a href="https://github.com/eliodecolli/DApiAuth">View the project on GitHub.</a></p>
+
+
+    </main><footer>
+  
+</footer>
+</div>
+  </body>
+</html>
